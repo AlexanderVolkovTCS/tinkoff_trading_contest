@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main_app.urls')),
     path('info/', include('knowledge_base.urls')),
+    path('backtest/', include('backtesting_app.urls')),
 ]

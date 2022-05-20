@@ -5,6 +5,10 @@
     {% load static %}
     <link href="{% static 'knowledge_base/css/navigation.css' %}" rel="stylesheet">
     <link href="{% static 'knowledge_base/css/styles.css' %}" rel="stylesheet">
+
+    {% block links %}
+    {% endblock %}
+
     {% block head %}
     {% endblock %}
 </head>
@@ -14,8 +18,8 @@
     <li><a href="{% url 'main_page' %}">Home</a></li>
     <div class="centered">
         <li><a  href="{% url 'info' %}">База знаний</a></li>
-        <li><a href="about.asp">Торговля</a></li>
-        <li><a href="contact.asp">Бэктест</a></li>
+        <li><a href="">Торговля</a></li>
+        <li><a href="{% url 'backtest' %}">Бэктест</a></li>
     </div>
 
   </ul>

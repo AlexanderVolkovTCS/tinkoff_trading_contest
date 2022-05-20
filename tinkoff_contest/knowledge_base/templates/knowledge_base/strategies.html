@@ -2,11 +2,16 @@
 {% load static %}
 {% block head %}
     <Title>Стратегии</Title>
-
+    <link href="{% static 'knowledge_base/css/strategies.css' %}" rel="stylesheet">
 {% endblock%}
 
 {% block main %}
-<div class="">
-
+<div class="strategy">
+    <h1>{{ Strategy.Name }}</h1>
+    <p>Описание:<br>{{ Strategy.Description }}
+       <br>Лучшая бумага: {{ Strategy.Best_stock}}
+       <br>Лучший результат: {{ Strategy.Best_profit}}
+    </p>
+    <a href="">Протестировать?</a>
 </div>
 {% endblock %}
