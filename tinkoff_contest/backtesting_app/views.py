@@ -48,8 +48,6 @@ class BacktestConfig(View):
         if len(request.POST) == 1:
             return redirect(to='backtest')
 
-
-
         return redirect(to='backtest')
 
 

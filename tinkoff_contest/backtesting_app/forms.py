@@ -1,14 +1,6 @@
 from knowledge_base.models import Strategy
 from django import forms
-
-
-INTERVALS = (
-    ('CANDLE_INTERVAL_1_MIN', '1 минута'),
-    ('CANDLE_INTERVAL_5_MIN', '5 минут'),
-    ('CANDLE_INTERVAL_15_MIN', '15 минут'),
-    ('CANDLE_INTERVAL_HOUR', '1 час'),
-    ('CANDLE_INTERVAL_DAY', '1 день'),
-)
+from backtesting_app.services.choices import INTERVALS
 
 
 class StrategyForm(forms.Form):
