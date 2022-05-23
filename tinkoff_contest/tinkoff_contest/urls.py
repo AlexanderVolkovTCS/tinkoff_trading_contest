@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('main_app.urls')),
     path('info/', include('knowledge_base.urls')),
     path('backtest/', include('backtesting_app.urls')),
+    path('trading/', include('trading_app.urls')),
 ]

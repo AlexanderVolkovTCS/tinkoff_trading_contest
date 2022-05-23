@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'knowledge_base',
     'main_app',
     'backtesting_app',
+    'trading_app',
 ]
 
 MIDDLEWARE = [

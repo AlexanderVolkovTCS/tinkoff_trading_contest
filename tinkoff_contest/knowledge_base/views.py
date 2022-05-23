@@ -27,6 +27,7 @@ class Strategies(View):
                 'Description': strategy.description,
                 'Best_stock': strategy.best_stock,
                 'Best_profit': strategy.best_profit,
+                'ID': pk,
             },
             'Strategies': strategies,
         }
